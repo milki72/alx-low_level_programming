@@ -6,13 +6,13 @@ int actual_prime(int num, int i);
  * is_prime_number - tells us if a number is a prime number or not.
  * @num: number to evaluate.
  *
- * Return: if num is a prime number 1 is a return value if not 0 is a return value.
+ * Return: if num is a prime number 1 is a return value if not 0.
  */
 int is_prime_number(int num)
 {
 	if (num <= 1)
-	       return (0);
-	return (actual_prime(num, num - 1);
+	return (0);
+	return (actual_prime(num, num - 1));
 }
 
 /**
@@ -20,7 +20,7 @@ int is_prime_number(int num)
  * @num: number to evaluate.
  * @i: iterator
  *
- * Return: if num is a prime number 1 is a return value if not 0 is a return value.
+ * Return: if num is a prime number 1 is a return value if not 0.
  */
 int actual_prime(int num, int i)
 {
@@ -30,5 +30,3 @@ int actual_prime(int num, int i)
 		return (0);
 	return (actual_prime(num, i - 1));
 }
-	    
-	

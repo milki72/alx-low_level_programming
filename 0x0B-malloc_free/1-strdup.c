@@ -6,7 +6,7 @@
 		
 /**
 		
- * _str_dup - duplicate to new memory space location
+ * _strdup - duplicate to new memory space location
 		
  * @strn: char
 		
@@ -14,7 +14,7 @@
 		
  */
 		
-char *_str_dup(char *strn)
+char *_strdup(char *strn)
 		
 {
 		
@@ -55,4 +55,3 @@ char *_str_dup(char *strn)
 	return (aa);
 		
 }
-

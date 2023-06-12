@@ -4,7 +4,7 @@
 		
 /**
 		
- * crtd_ary - create array of size size and assign char ch
+ * create_array - create array of size size and assign char ch
 		
  * @size: size of array
 		
@@ -18,7 +18,7 @@
 		
  */
 		
-char *crtd_ary(unsigned int size, char ch)
+char *create_array(unsigned int size, char ch)
 		
 {
 		

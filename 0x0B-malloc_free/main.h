@@ -4,11 +4,11 @@
 		
 
 		
-char *crtd_ary(unsigned int size, char ch);
+char *create_array(unsigned int size, char ch);
 		
 int _putchar(char ch);
 		
-char *_str_dup(char *strn);
+char *_strdup(char *strn);
 		
 char *str_concat(char *s1, char *s2);
 		

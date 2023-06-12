@@ -4,9 +4,9 @@
 		
 /**
 		
- * _putchar - writes the character c to stdout
+ * _putchar - writes the character ch to stdout
 		
- * @c: The character to print
+ * @ch: The character to print
 		
  *
 		
@@ -16,10 +16,10 @@
 		
  */
 		
-int _putchar(char c)
+int _putchar(char ch)
 		
 {
 		
-	return (write(1, &c, 1));
+	return (write(1, &ch, 1));
 		
 }

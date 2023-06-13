@@ -18,6 +18,6 @@ void free_grid(int **grid, int height);
 		
 char *argstostr(int arc, char **arv);
 		
-
+char **strtow(char *strn);
 		
 #endif

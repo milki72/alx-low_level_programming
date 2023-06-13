@@ -10,7 +10,7 @@ int _putchar(char ch);
 		
 char *_strdup(char *strn);
 		
-char *str_concat(char *s1, char *s2);
+char *str_concat(char *st1, char *st2);
 		
 int **alloc_grid(int width, int height);
 		

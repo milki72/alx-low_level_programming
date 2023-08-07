@@ -14,8 +14,13 @@ char *str_concat(char *s1, char *s2)
 	if (s1 == NULL && s2 == NULL)
 	return (NULL);
 
-	size_t len1 = (s1 != (NULL)) ? strlen(s1) : 0;
-	size_t len2 = (s2 != (NULL)) ? strlen(s2) : 0;
+	size_t len1;
+	size_t len2;
+	size_t i;
+	size_t j;
+
+	len1 = (s1 != (NULL)) ? strlen(s1) : 0;
+	len2 = (s2 != (NULL)) ? strlen(s2) : 0;
 
 	char *ptr;
 
@@ -25,8 +30,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-
-	size_t i, j;
 
 	for (i = 0; i < len1; i++)
 	{

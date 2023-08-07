@@ -6,7 +6,7 @@
  * @size: array size.
  * @c:a character to print.
  *
- * Return: a character value.
+ * Return: a pointer to character.
  */
 
 char *create_array(unsigned int size, char c)
@@ -15,7 +15,7 @@ char *create_array(unsigned int size, char c)
 	unsigned int i;
 
 	ptr = malloc(sizeof(char) * size);
-	if (ptr == NULL)
+	if (size = 0 || ptr == NULL)
 	{
 		return (NULL);
 	}

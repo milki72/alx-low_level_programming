@@ -24,11 +24,11 @@ char *str_concat(char *s1, char *s2)
 
 	else if (s1 == NULL)
 	{
-		return (s2);
+		s1 = "";
 	}
 	else (s2 == NULL)
 	{
-		return (s1);
+		s2 = "";
 	}
 
 	len1 = (s1 != (NULL)) ? strlen(s1) : 0;

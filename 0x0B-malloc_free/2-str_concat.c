@@ -17,19 +17,14 @@ char *str_concat(char *s1, char *s2)
 	size_t i;
 	size_t j;
 
-	if (s1 == NULL && s2 == NULL)
-	{
-		return (NULL);
-	}
-
-	else if (s1 == NULL)
-	{
+	if (s1 == NULL)
 		s1 = "";
-	}
-	else (s2 == NULL)
-	{
+
+	if (s2 == NULL)
 		s2 = "";
-	}
+
+	if (s1 == NULL && s2 == NULL)
+		return (NULL);
 
 	len1 = (s1 != (NULL)) ? strlen(s1) : 0;
 	len2 = (s2 != (NULL)) ? strlen(s2) : 0;

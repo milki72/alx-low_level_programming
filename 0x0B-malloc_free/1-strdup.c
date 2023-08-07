@@ -12,6 +12,7 @@ char *_strdup(char *str)
 {
 	int dup_len;
 	static char *dup;
+	int i;
 
 	/* Allocate memory for duplicate */
 	dup_len = strlen(str);
@@ -21,7 +22,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	int i = 0;
+	i = 0;
 
 	while (i <= dup_len)
 	{

@@ -10,26 +10,31 @@
 
 char *_strdup(char *str)
 {
-	int dup_len;
+	int j = 0;
 	static char *dup;
 	int i;
 
-	/* Allocate memory for duplicate */
-	dup_len = strlen(str);
-	dup = (char *) malloc(sizeof(char) * dup_len + 1);
-
-	if (dup == NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
 	i = 0;
 
-	while (i <= dup_len)
+	while (str[i] != '\0')
 	{
-		dup[i] = str[i];
 		i++;
 	}
-	dup[i] = '\0';
+
+	dup = (char *) malloc(sizeof(char) * (i + 1));
+
+	if (dup == NULL)
+		return (NULL);
+	j = 0;
+	while (str[j])
+	{
+		dup[j] = str[j];
+		j++;
+	}
 
 	return (dup);
 }
